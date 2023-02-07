@@ -17,3 +17,29 @@ int main(){
 	
 	return 0;
 }
+ void shuffle(int &a,int &b,int &c,int &d)
+   {
+      int ap;
+	  int ran = rand()%4;
+
+	  if(ran == 0){
+		ap = a;
+		a = b;
+		b = ap;
+	  }
+      if(ran == 1){
+		ap = b;
+		b = c;
+		c = ap;
+	  }
+	  if(ran == 2){
+		ap = c;
+		c = d;
+		d = ap;
+	  }
+	  if(ran == 3){
+		ap = d;
+		d = a;
+		a = ap;
+	  }
+   }
